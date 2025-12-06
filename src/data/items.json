@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Black Leather Wallet",
+    "category": "Accessories",
+    "location": "New York",
+    "date": "2025-05-02",
+    "status": "lost",
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=300&fit=crop",
+    "description": "Genuine leather wallet with multiple card slots and ID window"
+  },
+  {
+    "id": 2,
+    "title": "iPhone 12 Pro Max",
+    "category": "Electronics",
+    "location": "Los Angeles",
+    "date": "2025-04-15",
+    "status": "lost",
+    "image": "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=400&h=300&fit=crop",
+    "description": "Pacific Blue iPhone 12 Pro Max with minor screen crack"
+  },
+  {
+    "id": 3,
+    "title": "Red Hiking Backpack",
+    "category": "Bags",
+    "location": "Chicago",
+    "date": "2025-03-20",
+    "status": "found",
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=300&fit=crop",
+    "description": "Large red hiking backpack with multiple compartments found at Millennium Park"
+  },
+  {
+    "id": 4,
+    "title": "Gold Heart Necklace",
+    "category": "Jewelry",
+    "location": "Miami",
+    "date": "2025-02-10",
+    "status": "lost",
+    "image": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400&h=300&fit=crop",
+    "description": "18k gold necklace with heart pendant, very sentimental value"
+  },
+  {
+    "id": 5,
+    "title": "Dell Laptop Charger",
+    "category": "Electronics",
+    "location": "Seattle",
+    "date": "2025-01-05",
+    "status": "found",
+    "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400&h=300&fit=crop",
+    "description": "Dell XPS charger found at local coffee shop, still in good condition"
+  },
+  {
+    "id": 6,
+    "title": "Ray-Ban Aviator Sunglasses",
+    "category": "Accessories",
+    "location": "Austin",
+    "date": "2024-12-01",
+    "status": "lost",
+    "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&h=300&fit=crop",
+    "description": "Classic Ray-Ban aviator sunglasses with gold frame"
+  },
+  {
+    "id": 7,
+    "title": "Gold Wedding Band",
+    "category": "Jewelry",
+    "location": "Boston",
+    "date": "2024-11-15",
+    "status": "found",
+    "image": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400&h=300&fit=crop",
+    "description": "Simple gold wedding band found at Italian restaurant"
+  },
+  {
+    "id": 8,
+    "title": "Hydro Flask Water Bottle",
+    "category": "Miscellaneous",
+    "location": "Denver",
+    "date": "2024-10-30",
+    "status": "lost",
+    "image": "https://images.unsplash.com/photo-1523362628745-0c100150b504?w=400&h=300&fit=crop",
+    "description": "Navy blue Hydro Flask insulated water bottle, 21 oz"
+  },
+  {
+    "id": 9,
+    "title": "MacBook Pro 16-inch",
+    "category": "Electronics",
+    "location": "San Francisco",
+    "date": "2025-05-10",
+    "status": "lost",
+    "image": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=400&h=300&fit=crop",
+    "description": "Space Gray MacBook Pro 16-inch with M1 Pro chip"
+  },
+  {
+    "id": 10,
+    "title": "Louis Vuitton Handbag",
+    "category": "Bags",
+    "location": "Las Vegas",
+    "date": "2025-04-28",
+    "status": "found",
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=300&fit=crop",
+    "description": "Brown Louis Vuitton Neverfull MM tote bag found at casino"
+  },
+  {
+    "id": 11,
+    "title": "Diamond Earrings",
+    "category": "Jewelry",
+    "location": "Dallas",
+    "date": "2025-03-15",
+    "status": "lost",
+    "image": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400&h=300&fit=crop",
+    "description": "Small diamond stud earrings, very precious family heirloom"
+  },
+  {
+    "id": 12,
+    "title": "Nike Air Max Sneakers",
+    "category": "Accessories",
+    "location": "Portland",
+    "date": "2025-02-20",
+    "status": "found",
+    "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=300&fit=crop",
+    "description": "White Nike Air Max 90 sneakers found at running trail"
+  }
+]
