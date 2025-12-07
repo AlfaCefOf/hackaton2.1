@@ -20,6 +20,8 @@ const Hero = () => {
           <button className="btn-secondary text-lg px-8 py-3">Find Nearby Vets</button>
         </div>
       </div>
+
+      
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
         <div className="flex space-x-4">
           <div className="w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center">🐶</div>
