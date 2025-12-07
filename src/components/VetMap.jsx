@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import L from 'leaflet'
 
-// Fix for default markers in react-leaflet
 delete L.Icon.Default.prototype._getIconUrl
 L.Icon.Default.mergeOptions({
   iconRetinaUrl:
@@ -23,7 +22,7 @@ const VetMap = () => {
       rating: 4.5,
       services: ['Vaccinations', 'Surgery', 'Emergency Care'],
       hours: 'Mon-Sat: 9:00-18:00',
-      position: [41.2995, 69.2401] // Tashkent coordinates
+      position: [41.2995, 69.2401]
     },
     {
       id: 2,
@@ -68,9 +67,8 @@ const VetMap = () => {
   ]
 
   const [selectedClinic, setSelectedClinic] = useState(null)
-  const [mapCenter, setMapCenter] = useState([41.2995, 69.2401]) // Tashkent center
+  const [mapCenter, setMapCenter] = useState([41.2995, 69.2401]) 
 
-  // Custom marker icon
   const vetIcon = new L.Icon({
     iconUrl:
       'data:image/svg+xml;base64,' +
@@ -100,7 +98,6 @@ const VetMap = () => {
         </div>
 
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-8'>
-          {/* Clinic List */}
           <div className='lg:col-span-1'>
             <h3 className='text-xl font-semibold text-gray-900 mb-6'>
               Available Clinics
@@ -143,7 +140,6 @@ const VetMap = () => {
             </div>
           </div>
 
-          {/* Leaflet Map */}
           <div className='lg:col-span-2'>
             <div className='h-96 rounded-xl shadow-lg overflow-hidden'>
               <MapContainer

@@ -23,7 +23,6 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <Link to="/" className="text-[#2F3E46] hover:text-[#A8DADC] transition-colors">Bosh sahifa</Link>
             <Link to="/buy-pets" className="text-[#2F3E46] hover:text-[#A8DADC] transition-colors">Sotib olish</Link>
@@ -33,7 +32,6 @@ const Navbar = () => {
             <Link to="/vet-map" className="text-[#2F3E46] hover:text-[#A8DADC] transition-colors">Vet Klinikalar</Link>
           </div>
 
-          {/* Desktop User Section */}
           <div className="hidden md:flex items-center space-x-4">
             {user ? (
               <>
@@ -56,7 +54,6 @@ const Navbar = () => {
             )}
           </div>
 
-          {/* Mobile menu button */}
           <div className="md:hidden flex items-center">
             <button
               onClick={toggleMenu}
@@ -67,7 +64,6 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation Menu */}
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-white/95 backdrop-blur-md rounded-lg mt-2 shadow-lg border border-gray-200">
@@ -114,7 +110,6 @@ const Navbar = () => {
                 Vet Klinikalar
               </Link>
 
-              {/* Mobile User Section */}
               <div className="border-t border-gray-200 pt-2 mt-2">
                 {user ? (
                   <Link

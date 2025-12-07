@@ -41,6 +41,12 @@
       "name": "ibrohimjon",
       "email": "adham@gmail.com",
       "password": "adham2010"
+    },
+    {
+      "id": "28fa",
+      "name": "Adham",
+      "email": "adham@gmail.com",
+      "password": "adham2010"
     }
   ],
   "pets": [
@@ -437,6 +443,24 @@
         "New Listing"
       ],
       "category": "Cats"
+    },
+    {
+      "id": 1765099716463,
+      "name": "buldok",
+      "type": "Dog",
+      "breed": "buldok",
+      "age": "1years",
+      "price": 998,
+      "description": "very well and cute",
+      "location": "Tashkent",
+      "image": "🐶",
+      "tags": [
+        "For Sale"
+      ],
+      "badges": [
+        "New Listing"
+      ],
+      "category": "Dogs"
     }
   ]
 }

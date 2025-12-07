@@ -35,7 +35,7 @@ const FeaturedPets = ({
   useEffect(() => {
     const fetchAllPets = async () => {
       try {
-        const response = await fetch('http://localhost:3001/pets')
+        const response = await fetch('http://localhost:5000/pets')
         const data = await response.json()
         setAllPets(data)
       } catch (error) {
@@ -48,45 +48,46 @@ const FeaturedPets = ({
     fetchAllPets()
   }, [])
 
-  // Filter pets based on search criteria
-  const featuredPets = allPets.filter(pet => {
-    // Search term filter
-    if (searchTerm && !pet.name.toLowerCase().includes(searchTerm.toLowerCase()) &&
+  const featuredPets = allPets
+    .filter(pet => {
+      if (
+        searchTerm &&
+        !pet.name.toLowerCase().includes(searchTerm.toLowerCase()) &&
         !pet.breed.toLowerCase().includes(searchTerm.toLowerCase()) &&
-        !pet.location.toLowerCase().includes(searchTerm.toLowerCase())) {
-      return false
-    }
-
-    // Category filter
-    if (selectedCategory && selectedCategory !== 'Barcha hayvonlar') {
-      const categoryMap = {
-        'Itlar': 'Dogs',
-        'Mushuklar': 'Cats',
-        'Qushlar': 'Birds',
-        'Sudralib yuruvchilar': 'Reptiles',
-        'Boshqa hayvonlar': 'Other'
-      }
-      if (pet.category !== categoryMap[selectedCategory]) {
+        !pet.location.toLowerCase().includes(searchTerm.toLowerCase())
+      ) {
         return false
       }
-    }
 
-    // Price range filter
-    if (priceRange) {
-      if (priceRange === '0-100' && pet.price > 100) return false
-      if (priceRange === '100-500' && (pet.price < 100 || pet.price > 500)) return false
-      if (priceRange === '500+' && pet.price < 500) return false
-    }
+      if (selectedCategory && selectedCategory !== 'Barcha hayvonlar') {
+        const categoryMap = {
+          Itlar: 'Dogs',
+          Mushuklar: 'Cats',
+          Qushlar: 'Birds',
+          'Sudralib yuruvchilar': 'Reptiles',
+          'Boshqa hayvonlar': 'Other'
+        }
+        if (pet.category !== categoryMap[selectedCategory]) {
+          return false
+        }
+      }
 
-    // Age range filter
-    if (ageRange) {
-      if (ageRange === 'puppy' && !pet.age.includes('month')) return false
-      if (ageRange === 'adult' && pet.age.includes('month')) return false
-      if (ageRange === 'senior' && !pet.age.includes('year')) return false
-    }
+      if (priceRange) {
+        if (priceRange === '0-100' && pet.price > 100) return false
+        if (priceRange === '100-500' && (pet.price < 100 || pet.price > 500))
+          return false
+        if (priceRange === '500+' && pet.price < 500) return false
+      }
 
-    return true
-  }).slice(0, 12) // Show up to 12 filtered pets
+      if (ageRange) {
+        if (ageRange === 'puppy' && !pet.age.includes('month')) return false
+        if (ageRange === 'adult' && pet.age.includes('month')) return false
+        if (ageRange === 'senior' && !pet.age.includes('year')) return false
+      }
+
+      return true
+    })
+    .slice(0, 12)
 
   if (loading) {
     return (
