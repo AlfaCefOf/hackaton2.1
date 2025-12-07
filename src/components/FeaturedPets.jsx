@@ -6,7 +6,6 @@ const FeaturedPets = () => {
   const [featuredPets, setFeaturedPets] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Function to get appropriate icon for pet type
   const getPetIcon = (type) => {
     switch (type) {
       case 'Dog':
@@ -31,7 +30,6 @@ const FeaturedPets = () => {
       try {
         const response = await fetch('http://localhost:3001/pets');
         const data = await response.json();
-        // Show only first 6 pets as featured
         setFeaturedPets(data.slice(0, 6));
       } catch (error) {
         console.error('Error fetching featured pets:', error);
