@@ -35,8 +35,15 @@
       "location": "Tashkent",
       "price": 300,
       "image": "🐶",
-      "tags": ["For Sale", "Vaccinated"],
-      "badges": ["Healthy", "Good with kids"]
+      "category": "Dogs",
+      "tags": [
+        "For Sale",
+        "Vaccinated"
+      ],
+      "badges": [
+        "Healthy",
+        "Good with kids"
+      ]
     },
     {
       "id": 2,
@@ -47,8 +54,13 @@
       "location": "Tashkent",
       "price": 200,
       "image": "🐱",
-      "tags": ["For Sale"],
-      "badges": ["Vaccinated"]
+      "category": "Cats",
+      "tags": [
+        "For Sale"
+      ],
+      "badges": [
+        "Vaccinated"
+      ]
     },
     {
       "id": 3,
@@ -59,8 +71,13 @@
       "location": "Tashkent",
       "price": 50,
       "image": "🐦",
-      "tags": ["For Sale"],
-      "badges": ["Healthy"]
+      "category": "Birds",
+      "tags": [
+        "For Sale"
+      ],
+      "badges": [
+        "Healthy"
+      ]
     },
     {
       "id": 4,
@@ -71,8 +88,15 @@
       "location": "Tashkent",
       "price": 0,
       "image": "🐕",
-      "tags": ["Adoption", "Free Giveaway"],
-      "badges": ["Vaccinated", "Good with kids"]
+      "category": "Dogs",
+      "tags": [
+        "Adoption",
+        "Free Giveaway"
+      ],
+      "badges": [
+        "Vaccinated",
+        "Good with kids"
+      ]
     },
     {
       "id": 5,
@@ -83,8 +107,15 @@
       "location": "Tashkent",
       "price": 400,
       "image": "🐕",
-      "tags": ["For Sale", "Trained"],
-      "badges": ["Healthy", "Good with family"]
+      "category": "Dogs",
+      "tags": [
+        "For Sale",
+        "Trained"
+      ],
+      "badges": [
+        "Healthy",
+        "Good with family"
+      ]
     },
     {
       "id": 6,
@@ -95,8 +126,299 @@
       "location": "Tashkent",
       "price": 150,
       "image": "🐱",
-      "tags": ["For Sale"],
-      "badges": ["Vaccinated", "Playful"]
+      "category": "Cats",
+      "tags": [
+        "For Sale"
+      ],
+      "badges": [
+        "Vaccinated",
+        "Playful"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Charlie",
+      "type": "Dog",
+      "breed": "Beagle",
+      "age": "1.5 years",
+      "location": "Tashkent",
+      "price": 250,
+      "image": "🐶",
+      "category": "Dogs",
+      "tags": [
+        "For Sale",
+        "Friendly"
+      ],
+      "badges": [
+        "Vaccinated",
+        "Good with kids"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Milo",
+      "type": "Cat",
+      "breed": "British Shorthair",
+      "age": "2 years",
+      "location": "Tashkent",
+      "price": 180,
+      "image": "🐱",
+      "category": "Cats",
+      "tags": [
+        "For Sale",
+        "Calm"
+      ],
+      "badges": [
+        "Vaccinated",
+        "Indoor cat"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Coco",
+      "type": "Bird",
+      "breed": "Cockatiel",
+      "age": "1 year",
+      "location": "Tashkent",
+      "price": 80,
+      "image": "🐦",
+      "category": "Birds",
+      "tags": [
+        "For Sale",
+        "Talks"
+      ],
+      "badges": [
+        "Healthy",
+        "Friendly"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Rocky",
+      "type": "Dog",
+      "breed": "Bulldog",
+      "age": "4 years",
+      "location": "Tashkent",
+      "price": 0,
+      "image": "🐕",
+      "category": "Dogs",
+      "tags": [
+        "Adoption",
+        "Senior dog"
+      ],
+      "badges": [
+        "Vaccinated",
+        "Needs loving home"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Simba",
+      "type": "Cat",
+      "breed": "Maine Coon",
+      "age": "6 months",
+      "location": "Tashkent",
+      "price": 300,
+      "image": "🐱",
+      "category": "Cats",
+      "tags": [
+        "For Sale",
+        "Kitten"
+      ],
+      "badges": [
+        "Vaccinated",
+        "Playful"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Sunny",
+      "type": "Bird",
+      "breed": "Budgerigar",
+      "age": "8 months",
+      "location": "Tashkent",
+      "price": 40,
+      "image": "🐦",
+      "category": "Birds",
+      "tags": [
+        "For Sale",
+        "Colorful"
+      ],
+      "badges": [
+        "Healthy",
+        "Active"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Zeus",
+      "type": "Dog",
+      "breed": "Rottweiler",
+      "age": "2.5 years",
+      "location": "Tashkent",
+      "price": 450,
+      "image": "🐕",
+      "category": "Dogs",
+      "tags": [
+        "For Sale",
+        "Guard dog"
+      ],
+      "badges": [
+        "Vaccinated",
+        "Well-trained"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Luna",
+      "type": "Cat",
+      "breed": "Ragdoll",
+      "age": "1 year",
+      "location": "Tashkent",
+      "price": 220,
+      "image": "🐱",
+      "category": "Cats",
+      "tags": [
+        "For Sale",
+        "Affectionate"
+      ],
+      "badges": [
+        "Vaccinated",
+        "Loves cuddles"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Rio",
+      "type": "Bird",
+      "breed": "Macaw",
+      "age": "3 years",
+      "location": "Tashkent",
+      "price": 600,
+      "image": "🦜",
+      "category": "Birds",
+      "tags": [
+        "For Sale",
+        "Exotic"
+      ],
+      "badges": [
+        "Healthy",
+        "Talks",
+        "Colorful"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Bailey",
+      "type": "Dog",
+      "breed": "Poodle",
+      "age": "1 year",
+      "location": "Tashkent",
+      "price": 350,
+      "image": "🐩",
+      "category": "Dogs",
+      "tags": [
+        "For Sale",
+        "Hypoallergenic"
+      ],
+      "badges": [
+        "Vaccinated",
+        "Good with allergies"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Shadow",
+      "type": "Cat",
+      "breed": "Bombay",
+      "age": "9 months",
+      "location": "Tashkent",
+      "price": 190,
+      "image": "🐈‍⬛",
+      "category": "Cats",
+      "tags": [
+        "For Sale",
+        "Black cat"
+      ],
+      "badges": [
+        "Vaccinated",
+        "Mysterious"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Kiwi",
+      "type": "Bird",
+      "breed": "Lovebird",
+      "age": "1 year",
+      "location": "Tashkent",
+      "price": 65,
+      "image": "🐦",
+      "category": "Birds",
+      "tags": [
+        "For Sale",
+        "Pair available"
+      ],
+      "badges": [
+        "Healthy",
+        "Social"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Bear",
+      "type": "Dog",
+      "breed": "Chow Chow",
+      "age": "2 years",
+      "location": "Tashkent",
+      "price": 0,
+      "image": "🐕",
+      "category": "Dogs",
+      "tags": [
+        "Adoption",
+        "Fluffy"
+      ],
+      "badges": [
+        "Vaccinated",
+        "Needs grooming"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Nala",
+      "type": "Cat",
+      "breed": "Bengal",
+      "age": "1.5 years",
+      "location": "Tashkent",
+      "price": 280,
+      "image": "🐱",
+      "category": "Cats",
+      "tags": [
+        "For Sale",
+        "Energetic"
+      ],
+      "badges": [
+        "Vaccinated",
+        "Likes to play"
+      ]
+    },
+    {
+      "id": 1765089793366,
+      "name": "Sasha",
+      "type": "Cat",
+      "breed": "buldok",
+      "age": "1years 2months",
+      "price": 200,
+      "description": "Vey cute and friendly",
+      "location": "samarkand",
+      "image": "🐱",
+      "tags": [
+        "For Sale"
+      ],
+      "badges": [
+        "New Listing"
+      ],
+      "category": "Cats"
     }
   ]
 }

@@ -1,39 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { FiHeart, FiPhone, FiMapPin, FiDollarSign } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
+import { FiMapPin, FiDollarSign, FiPhone } from 'react-icons/fi';
 
-const PetMarketplace = () => {
-  const [pets, setPets] = useState([]);
-  const [filteredPets, setFilteredPets] = useState([]);
+const FeaturedPets = () => {
+  const [featuredPets, setFeaturedPets] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [selectedCategory, setSelectedCategory] = useState('All');
-
-  useEffect(() => {
-    const fetchPets = async () => {
-      try {
-        const response = await fetch('http://localhost:3001/pets');
-        const data = await response.json();
-        setPets(data);
-        setFilteredPets(data);
-      } catch (error) {
-        console.error('Error fetching pets:', error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchPets();
-  }, []);
-
-  useEffect(() => {
-    if (selectedCategory === 'All') {
-      setFilteredPets(pets);
-    } else {
-      setFilteredPets(pets.filter(pet => pet.category === selectedCategory));
-    }
-  }, [selectedCategory, pets]);
-
-  // Define categories explicitly to ensure consistency
-  const categories = ['All', 'Dogs', 'Cats', 'Birds'];
 
   // Function to get appropriate icon for pet type
   const getPetIcon = (type) => {
@@ -55,11 +26,28 @@ const PetMarketplace = () => {
     }
   };
 
+  useEffect(() => {
+    const fetchFeaturedPets = async () => {
+      try {
+        const response = await fetch('http://localhost:3001/pets');
+        const data = await response.json();
+        // Show only first 6 pets as featured
+        setFeaturedPets(data.slice(0, 6));
+      } catch (error) {
+        console.error('Error fetching featured pets:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchFeaturedPets();
+  }, []);
+
   if (loading) {
     return (
       <section className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="text-xl">Loading pets...</div>
+          <div className="text-xl">Loading featured pets...</div>
         </div>
       </section>
     );
@@ -68,27 +56,13 @@ const PetMarketplace = () => {
   return (
     <section className="py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-[#2F3E46] text-center mb-8">Pet Marketplace</h2>
-
-        {/* Category Filter */}
-        <div className="flex flex-wrap justify-center gap-2 mb-8">
-          {categories.map((category) => (
-            <button
-              key={category}
-              onClick={() => setSelectedCategory(category)}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
-                selectedCategory === category
-                  ? 'bg-[#A8DADC] text-[#2F3E46] shadow-md'
-                  : 'bg-white text-gray-600 hover:bg-gray-100'
-              }`}
-            >
-              {category}
-            </button>
-          ))}
+        <div className="text-center mb-8">
+          <h2 className="text-3xl font-bold text-[#2F3E46] mb-4">Featured Pets</h2>
+          <p className="text-gray-600">Meet some of our amazing pets waiting for their forever homes</p>
         </div>
 
-        <div className="pet-grid">
-          {filteredPets.map((pet) => (
+        <div className="pet-grid mb-8">
+          {featuredPets.map((pet) => (
             <div key={pet.id} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-4">
               <div className="w-full h-48 bg-gray-200 rounded-lg flex items-center justify-center text-6xl mb-4">
                 {getPetIcon(pet.type)}
@@ -126,9 +100,18 @@ const PetMarketplace = () => {
             </div>
           ))}
         </div>
+
+        <div className="text-center">
+          <Link
+            to="/buy-pets"
+            className="inline-block bg-[#A8DADC] hover:bg-[#A8DADC]/80 text-[#2F3E46] font-semibold py-3 px-8 rounded-lg transition-all duration-200 hover:shadow-lg"
+          >
+            View All Pets
+          </Link>
+        </div>
       </div>
     </section>
   );
 };
 
-export default PetMarketplace;
+export default FeaturedPets;

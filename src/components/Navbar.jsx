@@ -27,6 +27,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-8">
             <Link to="/" className="text-[#2F3E46] hover:text-[#A8DADC] transition-colors">Home</Link>
             <Link to="/buy-pets" className="text-[#2F3E46] hover:text-[#A8DADC] transition-colors">Buy Pets</Link>
+            <Link to="/sell-pets" className="text-[#2F3E46] hover:text-[#A8DADC] transition-colors">Sell Pets</Link>
             <Link to="/adoption" className="text-[#2F3E46] hover:text-[#A8DADC] transition-colors">Adoption</Link>
             <Link to="/donations" className="text-[#2F3E46] hover:text-[#A8DADC] transition-colors">Donations</Link>
             <Link to="/vet-map" className="text-[#2F3E46] hover:text-[#A8DADC] transition-colors">Vet Map</Link>
@@ -83,6 +84,13 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Buy Pets
+              </Link>
+              <Link
+                to="/sell-pets"
+                className="block px-3 py-2 text-[#2F3E46] hover:text-[#A8DADC] hover:bg-gray-50 rounded-md transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Sell Pets
               </Link>
               <Link
                 to="/adoption"

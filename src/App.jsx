@@ -5,6 +5,7 @@ import Signup from './pages/Signup';
 import Dashboard from './pages/Dashboard';
 import Profile from './pages/Profile';
 import BuyPets from './pages/BuyPets';
+import SellPets from './pages/SellPets';
 import Adoption from './pages/Adoption';
 import VetMapPage from './pages/VetMapPage';
 import Donations from './pages/Donations';
@@ -45,6 +46,14 @@ function App() {
           element={
             <ProtectedRoute>
               <BuyPets />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/sell-pets"
+          element={
+            <ProtectedRoute>
+              <SellPets />
             </ProtectedRoute>
           }
         />

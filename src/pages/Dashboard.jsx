@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import SearchFilters from '../components/SearchFilters';
-import PetMarketplace from '../components/PetMarketplace';
+import FeaturedPets from '../components/FeaturedPets';
 import AdoptionFoster from '../components/AdoptionFoster';
 import DonationSection from '../components/DonationSection';
 import VetMap from '../components/VetMap';
@@ -14,7 +14,7 @@ const Dashboard = () => {
       <Navbar />
       <Hero />
       <SearchFilters />
-      <PetMarketplace />
+      <FeaturedPets />
       <AdoptionFoster />
       <DonationSection />
       <VetMap />
