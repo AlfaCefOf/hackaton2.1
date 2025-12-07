@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "password123"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "password": "password123"
+    },
+    {
+      "id": "f3cc",
+      "name": "Adhamjon",
+      "email": "adhamjonjabborov97@gmail.com",
+      "password": "adhamjon2010"
+    },
+    {
+      "id": "ac89",
+      "name": "Firdavs",
+      "email": "jabborovadhamjon97@gmail.com",
+      "password": "firdavs2009"
+    }
+  ]
+}
