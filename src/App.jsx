@@ -9,6 +9,7 @@ import SellPets from './pages/SellPets';
 import Adoption from './pages/Adoption';
 import VetMapPage from './pages/VetMapPage';
 import Donations from './pages/Donations';
+import AdminDashboard from './pages/AdminDashboard';
 import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
@@ -81,6 +82,7 @@ function App() {
             </ProtectedRoute>
           }
         />
+        <Route path="/admin" element={<AdminDashboard />} />
       </Routes>
     </Router>
   );

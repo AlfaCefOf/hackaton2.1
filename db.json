@@ -23,6 +23,18 @@
       "name": "Firdavs",
       "email": "jabborovadhamjon97@gmail.com",
       "password": "firdavs2009"
+    },
+    {
+      "id": "admin001",
+      "name": "SuperAdmin",
+      "email": "admin@pettashkent.uz",
+      "password": "admin123"
+    },
+    {
+      "id": "29e1",
+      "name": "MR.BEST",
+      "email": "test@gmail.com",
+      "password": "adham2010"
     }
   ],
   "pets": [
@@ -34,7 +46,7 @@
       "age": "2 years",
       "location": "Tashkent",
       "price": 300,
-      "image": "https://avatars.mds.yandex.net/get-altay/235931/2a0000015d4833189b6f08ab15b91da94f97/L_height",
+      "image": "https://images.unsplash.com/photo-1552053831-71594a27632d?w=400&h=400&fit=crop&crop=center",
       "category": "Dogs",
       "tags": [
         "For Sale",
@@ -125,7 +137,7 @@
       "age": "8 months",
       "location": "Tashkent",
       "price": 150,
-      "image": "https://data.daryo.uz/media/cache/2020/08/photo_2020-08-04_10-03-26mmm-960x679.jpg",
+      "image": "https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=400&h=400&fit=crop&crop=center",
       "category": "Cats",
       "tags": [
         "For Sale"
@@ -143,7 +155,7 @@
       "age": "1.5 years",
       "location": "Tashkent",
       "price": 250,
-      "image": "🐶",
+      "image": "https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?w=400&h=400&fit=crop&crop=center",
       "category": "Dogs",
       "tags": [
         "For Sale",
@@ -200,7 +212,7 @@
       "age": "4 years",
       "location": "Tashkent",
       "price": 0,
-      "image": "🐕",
+      "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=400&fit=crop&crop=center",
       "category": "Dogs",
       "tags": [
         "Adoption",
@@ -238,7 +250,7 @@
       "age": "8 months",
       "location": "Tashkent",
       "price": 40,
-      "image": "🐦",
+      "image": "https://images.unsplash.com/photo-1444464666168-49d633b86797?w=400&h=400&fit=crop&crop=center",
       "category": "Birds",
       "tags": [
         "For Sale",
@@ -295,7 +307,7 @@
       "age": "3 years",
       "location": "Tashkent",
       "price": 600,
-      "image": "🦜",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop&crop=center",
       "category": "Birds",
       "tags": [
         "For Sale",
@@ -315,7 +327,7 @@
       "age": "1 year",
       "location": "Tashkent",
       "price": 350,
-      "image": "🐩",
+      "image": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400&h=400&fit=crop&crop=center",
       "category": "Dogs",
       "tags": [
         "For Sale",
@@ -334,7 +346,7 @@
       "age": "9 months",
       "location": "Tashkent",
       "price": 190,
-      "image": "🐈‍⬛",
+      "image": "https://images.unsplash.com/photo-1596854273338-cbf078ec7071?w=400&h=400&fit=crop&crop=center",
       "category": "Cats",
       "tags": [
         "For Sale",
@@ -391,7 +403,7 @@
       "age": "1.5 years",
       "location": "Tashkent",
       "price": 280,
-      "image": "🐱",
+      "image": "https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?w=400&h=400&fit=crop&crop=center",
       "category": "Cats",
       "tags": [
         "For Sale",

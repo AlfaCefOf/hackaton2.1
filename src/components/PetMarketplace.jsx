@@ -110,8 +110,8 @@ const PetMarketplace = () => {
               key={pet.id}
               className='bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-4'
             >
-              <div className='w-full h-48 bg-gray-200 rounded-lg flex items-center justify-center text-6xl mb-4'>
-                {getPetIcon(pet.type)}
+              <div className='w-full h-48 bg-gray-200 rounded-lg overflow-hidden mb-4'>
+                <img src={pet.image} alt={pet.name} className='w-full h-full object-cover' />
               </div>
               <h3 className='text-lg font-semibold text-[#2F3E46] mb-2'>
                 {pet.name}
