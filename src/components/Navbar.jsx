@@ -19,16 +19,16 @@ const Navbar = () => {
               <div className="w-8 h-8 bg-[#A8DADC] rounded-full flex items-center justify-center">
                 <span className="text-[#2F3E46] font-bold">🐾</span>
               </div>
-              <span className="text-xl font-bold text-[#2F3E46]">Uy Hayvonlari Toshkent</span>
+              <span className="text-xl font-bold text-[#2F3E46]">Pet Tashkent</span>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <Link to="/" className="text-[#2F3E46] hover:text-[#A8DADC] transition-colors">Bosh sahifa</Link>
-            <Link to="/buy-pets" className="text-[#2F3E46] hover:text-[#A8DADC] transition-colors">Hayvonlarni sotib olish</Link>
+            <Link to="/buy-pets" className="text-[#2F3E46] hover:text-[#A8DADC] transition-colors">Sotib olish</Link>
             <Link to="/sell-pets" className="text-[#2F3E46] hover:text-[#A8DADC] transition-colors">Hayvonlarni sotish</Link>
-            <Link to="/adoption" className="text-[#2F3E46] hover:text-[#A8DADC] transition-colors">Farzandlikka olish</Link>
+            <Link to="/adoption" className="text-[#2F3E46] hover:text-[#A8DADC] transition-colors">Boqib olish</Link>
             <Link to="/donations" className="text-[#2F3E46] hover:text-[#A8DADC] transition-colors">Xayriya</Link>
             <Link to="/vet-map" className="text-[#2F3E46] hover:text-[#A8DADC] transition-colors">Vet Klinikalar</Link>
           </div>
@@ -48,7 +48,7 @@ const Navbar = () => {
               </>
             ) : (
               <>
-                <Link to="/login" className="btn-accent">Login</Link>
+                <Link to="/login" className="btn-accent">Kirish</Link>
                 <div className="w-8 h-8 bg-[#F1FAEE] rounded-full flex items-center justify-center relative">
                   <span className="text-[#2F3E46]">👤</span>
                 </div>
@@ -76,42 +76,42 @@ const Navbar = () => {
                 className="block px-3 py-2 text-[#2F3E46] hover:text-[#A8DADC] hover:bg-gray-50 rounded-md transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Home
+                Bosh sahifa
               </Link>
               <Link
                 to="/buy-pets"
                 className="block px-3 py-2 text-[#2F3E46] hover:text-[#A8DADC] hover:bg-gray-50 rounded-md transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Buy Pets
+                Hayvonlarni sotib olish
               </Link>
               <Link
                 to="/sell-pets"
                 className="block px-3 py-2 text-[#2F3E46] hover:text-[#A8DADC] hover:bg-gray-50 rounded-md transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Sell Pets
+                Hayvonlarni sotish
               </Link>
               <Link
                 to="/adoption"
                 className="block px-3 py-2 text-[#2F3E46] hover:text-[#A8DADC] hover:bg-gray-50 rounded-md transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Adoption
+                Farzandlikka olish
               </Link>
               <Link
                 to="/donations"
                 className="block px-3 py-2 text-[#2F3E46] hover:text-[#A8DADC] hover:bg-gray-50 rounded-md transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Donations
+                Xayriya
               </Link>
               <Link
                 to="/vet-map"
                 className="block px-3 py-2 text-[#2F3E46] hover:text-[#A8DADC] hover:bg-gray-50 rounded-md transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Vet Map
+                Vet Klinikalar
               </Link>
 
               {/* Mobile User Section */}
@@ -135,7 +135,7 @@ const Navbar = () => {
                     className="block px-3 py-2 text-[#2F3E46] hover:text-[#A8DADC] hover:bg-gray-50 rounded-md transition-colors font-semibold"
                     onClick={() => setIsOpen(false)}
                   >
-                    Login
+                    Kirish
                   </Link>
                 )}
               </div>

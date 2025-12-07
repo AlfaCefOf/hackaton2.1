@@ -76,10 +76,10 @@ const AdoptionFoster = () => {
     <section className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-[#2F3E46] mb-4">Adoption & Foster Care</h2>
+          <h2 className="text-3xl font-bold text-[#2F3E46] mb-4">Farzandlikka olish va homiylik</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Give pets a second chance at happiness. Whether you're looking to adopt or provide temporary foster care,
-            every animal deserves a loving home.
+            Uy hayvonlariga baxtning ikkinchi imkoniyatini bering. Siz farzandlikka olishni xohlaysizmi yoki vaqtinchalik homiylik ta'minlaysizmi,
+            har bir hayvon mehribon uyga loyiqdir.
           </p>
         </div>
 
@@ -93,7 +93,7 @@ const AdoptionFoster = () => {
                 : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
             }`}
           >
-            All Pets
+            Barcha hayvonlar
           </button>
           <button
             onClick={() => setSelectedType('adoption')}
@@ -104,7 +104,7 @@ const AdoptionFoster = () => {
             }`}
           >
             <FiHome size={16} />
-            Available for Adoption
+            Farzandlikka olish uchun mavjud
           </button>
           <button
             onClick={() => setSelectedType('foster')}
@@ -115,7 +115,7 @@ const AdoptionFoster = () => {
             }`}
           >
             <FiHeart size={16} />
-            Need Foster Care
+            Homiylikka muhtoj
           </button>
         </div>
 
@@ -127,12 +127,12 @@ const AdoptionFoster = () => {
                 <div className="text-5xl">{pet.image}</div>
                 {pet.urgent && (
                   <span className="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full font-medium">
-                    Urgent
+                    Shoshilinch
                   </span>
                 )}
               </div>
 
-              <h3 className="text-xl font-semibold text-[#2F3E46] mb-2">Meet {pet.name}</h3>
+              <h3 className="text-xl font-semibold text-[#2F3E46] mb-2">{pet.name} bilan tanishing</h3>
 
               <div className="space-y-2 mb-4">
                 <div className="flex items-center text-sm text-gray-600">
@@ -145,7 +145,7 @@ const AdoptionFoster = () => {
                 </div>
                 <div className="flex items-center text-sm text-gray-600">
                   <FiCalendar className="mr-2" size={14} />
-                  {pet.category === 'adoption' ? 'Available for Adoption' : 'Needs Foster Care'}
+                  {pet.category === 'adoption' ? 'Farzandlikka olish uchun mavjud' : 'Homiylikka muhtoj'}
                 </div>
               </div>
 
@@ -157,21 +157,21 @@ const AdoptionFoster = () => {
                   className="flex-1 bg-white hover:bg-gray-50 text-[#2F3E46] font-medium py-2 px-4 rounded-lg border border-gray-300 transition-all duration-200 flex items-center justify-center gap-2"
                 >
                   <FiPhone size={16} />
-                  Contact
+                  Aloqa
                 </button>
                 <button
                   onClick={() => pet.category === 'adoption' ? handleAdopt(pet) : handleFoster(pet)}
                   className="flex-1 btn-primary flex items-center justify-center gap-2"
                 >
                   <FiHeart size={16} />
-                  {pet.category === 'adoption' ? 'Adopt' : 'Foster'}
+                  {pet.category === 'adoption' ? 'Farzandlikka olish' : 'Homiylik'}
                 </button>
               </div>
 
               {/* Contact Form Modal */}
               {showContactForm === pet.id && (
                 <div className="mt-4 p-4 bg-white rounded-lg border">
-                  <h4 className="font-semibold text-[#2F3E46] mb-3">Contact Information</h4>
+                  <h4 className="font-semibold text-[#2F3E46] mb-3">Aloqa ma'lumotlari</h4>
                   <div className="space-y-2 text-sm">
                     <div className="flex items-center">
                       <FiPhone className="mr-2 text-gray-500" size={14} />

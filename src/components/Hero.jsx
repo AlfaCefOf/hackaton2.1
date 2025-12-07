@@ -10,14 +10,14 @@ const Hero = () => {
       </div>
       <div className="text-center z-10 max-w-4xl mx-auto px-4">
         <h1 className="text-5xl md:text-7xl font-bold text-[#2F3E46] mb-6">
-          Connecting Tashkent through Pets
+          Toshkentni uy hayvonlari orqali bog'lash
         </h1>
         <p className="text-xl md:text-2xl text-[#2F3E46]/80 mb-8">
-          Buy, Adopt, Donate & Care
+          Sotib olish, Farzandlikka olish, Xayriya qilish va G'amxo'rlik
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="btn-primary text-lg px-8 py-3">Browse Pets</button>
-          <button className="btn-secondary text-lg px-8 py-3">Find Nearby Vets</button>
+          <button className="btn-primary text-lg px-8 py-3">Hayvonlarni ko'rish</button>
+          <button className="btn-secondary text-lg px-8 py-3">Yaqin vet klinikalarni topish</button>
         </div>
       </div>
 

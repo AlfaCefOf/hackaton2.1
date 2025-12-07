@@ -10,7 +10,7 @@ const PetMarketplace = () => {
   useEffect(() => {
     const fetchPets = async () => {
       try {
-        const response = await fetch('http://localhost:5001/pets')
+        const response = await fetch('http://localhost:5000/pets')
         const data = await response.json()
         setPets(data)
         setFilteredPets(data)
@@ -32,7 +32,7 @@ const PetMarketplace = () => {
     }
   }, [selectedCategory, pets])
 
-  const categories = ['All', 'Dogs', 'Cats', 'Birds, Hamsters, fishs, Rabbits']
+  const categories = ['Hammasi', 'Itlar', 'Mushuklar', 'Qushlar, Hamsterlar, Baliqlar, Quziqorinlar']
 
   const getPetIcon = type => {
     switch (type) {
@@ -56,18 +56,18 @@ const PetMarketplace = () => {
   const handleBuy = pet => {
     if (pet.price === 0) {
       alert(
-        `Thank you for your interest in adopting ${pet.name}! Our adoption team will contact you within 24 hours.`
+        `${pet.name}ni farzandlikka olishga qiziqishingiz uchun rahmat! Bizning farzandlikka olish jamoasi 24 soat ichida siz bilan bog'lanadi.`
       )
     } else {
       alert(
-        `Thank you for your interest in purchasing ${pet.name} for $${pet.price}! Our sales team will contact you within 24 hours.`
+        `${pet.name}ni $${pet.price}ga sotib olishga qiziqishingiz uchun rahmat! Bizning savdo jamoasi 24 soat ichida siz bilan bog'lanadi.`
       )
     }
   }
 
   const handleContact = pet => {
     alert(
-      `Contact information for ${pet.name}:\n\nPhone: +998 90 123 45 67\nEmail: info@pettashkent.uz\nLocation: ${pet.location}\n\nOur team will be happy to assist you!`
+      `${pet.name} uchun aloqa ma'lumotlari:\n\nTelefon: +998 90 123 45 67\nEmail: info@pettashkent.uz\nManzil: ${pet.location}\n\nBizning jamoa sizga yordam berishdan xursand bo'ladi!`
     )
   }
 
@@ -75,7 +75,7 @@ const PetMarketplace = () => {
     return (
       <section className='py-12 bg-gray-50'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center'>
-          <div className='text-xl'>Loading pets...</div>
+          <div className='text-xl'>Hayvonlar yuklanmoqda...</div>
         </div>
       </section>
     )
@@ -85,7 +85,7 @@ const PetMarketplace = () => {
     <section className='py-12 bg-gray-50'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <h2 className='text-3xl font-bold text-[#2F3E46] text-center mb-8'>
-          Pet Marketplace
+          Uy Hayvonlari Bozori
         </h2>
 
         <div className='flex flex-wrap justify-center gap-2 mb-8'>
@@ -149,14 +149,14 @@ const PetMarketplace = () => {
                   className='btn-primary flex-1 flex items-center justify-center gap-2'
                 >
                   <FiDollarSign size={16} />
-                  {pet.price === 0 ? 'Adopt' : 'Buy'}
+                  {pet.price === 0 ? 'Farzandlikka olish' : 'Sotib olish'}
                 </button>
                 <button
                   onClick={() => handleContact(pet)}
                   className='btn-secondary flex-1 flex items-center justify-center gap-2'
                 >
                   <FiPhone size={16} />
-                  Contact
+                  Aloqa
                 </button>
               </div>
             </div>

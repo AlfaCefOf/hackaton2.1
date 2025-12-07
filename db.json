@@ -34,7 +34,7 @@
       "age": "2 years",
       "location": "Tashkent",
       "price": 300,
-      "image": "🐶",
+      "image": "https://avatars.mds.yandex.net/get-altay/235931/2a0000015d4833189b6f08ab15b91da94f97/L_height",
       "category": "Dogs",
       "tags": [
         "For Sale",
@@ -53,7 +53,7 @@
       "age": "1 year",
       "location": "Tashkent",
       "price": 200,
-      "image": "🐱",
+      "image": "https://data.daryo.uz/media/cache/2020/08/photo_2020-08-04_10-03-26mmm-960x679.jpg",
       "category": "Cats",
       "tags": [
         "For Sale"
@@ -125,7 +125,7 @@
       "age": "8 months",
       "location": "Tashkent",
       "price": 150,
-      "image": "🐱",
+      "image": "https://data.daryo.uz/media/cache/2020/08/photo_2020-08-04_10-03-26mmm-960x679.jpg",
       "category": "Cats",
       "tags": [
         "For Sale"
@@ -162,7 +162,7 @@
       "age": "2 years",
       "location": "Tashkent",
       "price": 180,
-      "image": "🐱",
+      "image": "https://suret.pics/uploads/posts/2023-09/1695227761_2-5.jpg",
       "category": "Cats",
       "tags": [
         "For Sale",
@@ -219,7 +219,7 @@
       "age": "6 months",
       "location": "Tashkent",
       "price": 300,
-      "image": "🐱",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokiu45gex1UT5TWZs0wg6p0MxyjS4ST5BsA&s",
       "category": "Cats",
       "tags": [
         "For Sale",
@@ -276,7 +276,7 @@
       "age": "1 year",
       "location": "Tashkent",
       "price": 220,
-      "image": "🐱",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokiu45gex1UT5TWZs0wg6p0MxyjS4ST5BsA&s",
       "category": "Cats",
       "tags": [
         "For Sale",
