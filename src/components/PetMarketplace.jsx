@@ -1,12 +1,40 @@
-import React from 'react';
-import pets from '../data/pets.json';
+import React, { useState, useEffect } from 'react';
 
 const PetMarketplace = () => {
+  const [pets, setPets] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchPets = async () => {
+      try {
+        const response = await fetch('http://localhost:3001/pets');
+        const data = await response.json();
+        setPets(data);
+      } catch (error) {
+        console.error('Error fetching pets:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchPets();
+  }, []);
+
+  if (loading) {
+    return (
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="text-xl">Loading pets...</div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-[#2F3E46] text-center mb-8">Pet Marketplace</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="pet-grid">
           {pets.map((pet) => (
             <div key={pet.id} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-4">
               <div className="w-full h-48 bg-gray-200 rounded-lg flex items-center justify-center text-6xl mb-4">

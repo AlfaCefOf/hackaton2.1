@@ -24,5 +24,79 @@
       "email": "jabborovadhamjon97@gmail.com",
       "password": "firdavs2009"
     }
+  ],
+  "pets": [
+    {
+      "id": 1,
+      "name": "Buddy",
+      "type": "Dog",
+      "breed": "Golden Retriever",
+      "age": "2 years",
+      "location": "Tashkent",
+      "price": 300,
+      "image": "🐶",
+      "tags": ["For Sale", "Vaccinated"],
+      "badges": ["Healthy", "Good with kids"]
+    },
+    {
+      "id": 2,
+      "name": "Whiskers",
+      "type": "Cat",
+      "breed": "Persian",
+      "age": "1 year",
+      "location": "Tashkent",
+      "price": 200,
+      "image": "🐱",
+      "tags": ["For Sale"],
+      "badges": ["Vaccinated"]
+    },
+    {
+      "id": 3,
+      "name": "Tweety",
+      "type": "Bird",
+      "breed": "Canary",
+      "age": "6 months",
+      "location": "Tashkent",
+      "price": 50,
+      "image": "🐦",
+      "tags": ["For Sale"],
+      "badges": ["Healthy"]
+    },
+    {
+      "id": 4,
+      "name": "Luna",
+      "type": "Dog",
+      "breed": "Labrador",
+      "age": "3 years",
+      "location": "Tashkent",
+      "price": 0,
+      "image": "🐕",
+      "tags": ["Adoption", "Free Giveaway"],
+      "badges": ["Vaccinated", "Good with kids"]
+    },
+    {
+      "id": 5,
+      "name": "Max",
+      "type": "Dog",
+      "breed": "German Shepherd",
+      "age": "1 year",
+      "location": "Tashkent",
+      "price": 400,
+      "image": "🐕",
+      "tags": ["For Sale", "Trained"],
+      "badges": ["Healthy", "Good with family"]
+    },
+    {
+      "id": 6,
+      "name": "Bella",
+      "type": "Cat",
+      "breed": "Siamese",
+      "age": "8 months",
+      "location": "Tashkent",
+      "price": 150,
+      "image": "🐱",
+      "tags": ["For Sale"],
+      "badges": ["Vaccinated", "Playful"]
+    }
   ]
 }

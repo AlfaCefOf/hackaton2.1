@@ -37,9 +37,9 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800">
-      <div className="auth-card bg-white/10 backdrop-blur-lg rounded-xl shadow-2xl p-8 w-full max-w-md mx-4">
-        <h2 className="text-3xl font-bold text-white text-center mb-8">Login</h2>
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-black">
+      <div className="auth-form bg-white/5 backdrop-blur-md rounded-lg shadow-2xl border border-white/10">
+        <h2 className="text-2xl font-semibold text-white text-center mb-6">Sign In</h2>
         <Formik
           initialValues={{ email: '', password: '' }}
           validationSchema={LoginSchema}
@@ -48,33 +48,33 @@ const Login = () => {
           {({ isSubmitting }) => (
             <Form className="space-y-6">
               <div className="relative">
-                <FiMail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white/70" />
+                <FiMail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
                 <Field
                   type="email"
                   name="email"
-                  placeholder="Email"
-                  className="w-full pl-10 pr-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all duration-300"
+                  placeholder="Email address"
+                  className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                 />
-                <ErrorMessage name="email" component="div" className="text-red-300 text-sm mt-1" />
+                <ErrorMessage name="email" component="div" className="text-red-400 text-sm mt-1" />
               </div>
 
               <div className="relative">
-                <FiLock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white/70" />
+                <FiLock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
                 <Field
                   type="password"
                   name="password"
                   placeholder="Password"
-                  className="w-full pl-10 pr-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all duration-300"
+                  className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                 />
-                <ErrorMessage name="password" component="div" className="text-red-300 text-sm mt-1" />
+                <ErrorMessage name="password" component="div" className="text-red-400 text-sm mt-1" />
               </div>
 
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-green-500 to-blue-600 hover:from-green-600 hover:to-blue-700 text-white font-semibold py-3 px-4 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-md shadow-md hover:shadow-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {isSubmitting ? 'Logging In...' : 'Login'}
+                {isSubmitting ? 'Signing in...' : 'Sign In'}
               </button>
             </Form>
           )}

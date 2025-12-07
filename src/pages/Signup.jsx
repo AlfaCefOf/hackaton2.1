@@ -51,9 +51,9 @@ const Signup = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-800 via-gray-900 to-slate-700">
-      <div className="auth-card bg-white/10 backdrop-blur-lg rounded-xl shadow-2xl p-8 w-full max-w-md mx-4">
-        <h2 className="text-3xl font-bold text-white text-center mb-8">Sign Up</h2>
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-black">
+      <div className="auth-form bg-white/5 backdrop-blur-md rounded-lg shadow-2xl border border-white/10">
+        <h2 className="text-2xl font-semibold text-white text-center mb-6">Create Account</h2>
         <Formik
           initialValues={{ name: '', email: '', password: '', confirmPassword: '' }}
           validationSchema={SignupSchema}
@@ -62,55 +62,55 @@ const Signup = () => {
           {({ isSubmitting }) => (
             <Form className="space-y-6">
               <div className="relative">
-                <FiUser className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white/70" />
+                <FiUser className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
                 <Field
                   type="text"
                   name="name"
-                  placeholder="Full Name"
-                  className="w-full pl-10 pr-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all duration-300"
+                  placeholder="Full name"
+                  className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                 />
-                <ErrorMessage name="name" component="div" className="text-red-300 text-sm mt-1" />
+                <ErrorMessage name="name" component="div" className="text-red-400 text-sm mt-1" />
               </div>
 
               <div className="relative">
-                <FiMail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white/70" />
+                <FiMail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
                 <Field
                   type="email"
                   name="email"
-                  placeholder="Email"
-                  className="w-full pl-10 pr-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all duration-300"
+                  placeholder="Email address"
+                  className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                 />
-                <ErrorMessage name="email" component="div" className="text-red-300 text-sm mt-1" />
+                <ErrorMessage name="email" component="div" className="text-red-400 text-sm mt-1" />
               </div>
 
               <div className="relative">
-                <FiLock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white/70" />
+                <FiLock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
                 <Field
                   type="password"
                   name="password"
                   placeholder="Password"
-                  className="w-full pl-10 pr-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all duration-300"
+                  className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                 />
-                <ErrorMessage name="password" component="div" className="text-red-300 text-sm mt-1" />
+                <ErrorMessage name="password" component="div" className="text-red-400 text-sm mt-1" />
               </div>
 
               <div className="relative">
-                <FiLock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white/70" />
+                <FiLock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
                 <Field
                   type="password"
                   name="confirmPassword"
-                  placeholder="Confirm Password"
-                  className="w-full pl-10 pr-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all duration-300"
+                  placeholder="Confirm password"
+                  className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                 />
-                <ErrorMessage name="confirmPassword" component="div" className="text-red-300 text-sm mt-1" />
+                <ErrorMessage name="confirmPassword" component="div" className="text-red-400 text-sm mt-1" />
               </div>
 
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold py-3 px-4 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-md shadow-md hover:shadow-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {isSubmitting ? 'Signing Up...' : 'Sign Up'}
+                {isSubmitting ? 'Creating account...' : 'Create Account'}
               </button>
             </Form>
           )}
