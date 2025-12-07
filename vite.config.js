@@ -16,7 +16,7 @@ export default defineConfig({
   },
   preview: {
     host: true,
-    port: process.env.PORT,
+    port: process.env.PORT || 5001,
     allowedHosts: [
       "hackaton2-1-nwu6.onrender.com"
     ]
